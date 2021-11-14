@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>9Food (для iphone)</title>
+    <link rel="stylesheet" href="style.css?v=1.6">
+  </head>
+  <body>
+    <div class="screen">
+      <p class="top-menu"><button id="btn-clear">Сбросить данные</button>|<button id="btn-refresh">Обновить</button>|<button id="btn-support">тг @vityaschel</button></p>
+      <div class="login-screen" id="login-screen" style="display: block;">
+        <p class="text-main">Введите код</p>
+        <input id="_6digitcode" placeholder="6-значный код" maxlength="6" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+        <button type="button" id="button-go">Продолжить</button>
+        <p class="text-info">Введите в поле выше код для авторизации в системе, чтобы продолжить</p>
+      </div>
+      <div class="loading-screen" id="loading-screen" align="center">
+        <img src="loading.svg" alt="Загрузка...">
+      </div>
+      <div class="vote-screen" id="vote-screen">
+        <div class="time"><p>Последнее обновление:</p><p id="timestamp">-</p></div>
+        <div class="b" align="center"><input type="checkbox" name="b1" id="b1" checked><label id="b1-t" for="b1"></label></div>
+        <div class="b" align="center"><input type="checkbox" name="b2" id="b2" checked><label id="b2-t" for="b2"></label></div>
+        <div class="b" align="center"><input type="checkbox" name="b3" id="b3" checked><label id="b3-t" for="b3"></label></div>
+        <div class="btn-outer" align="center"><button type="button" id="done-button">Готово</button></div>
+        <p class="warning" id="warning">Вы уже проголосовали</p>
+        <p>Отметьте нужное галочкой и нажмите на кнопку Готово</p>
+      </div>
+      <p class="hint">Добавьте в закладки сайт, с него не приходят уведомления. На андроид есть <a href="https://play.google.com/store/apps/details?id=com.vityaschel.ninefood">приложение</a></p>
+    </div>
+    <script type="text/javascript" src="script.js?v=1.5"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Еда на завтра</title>
+    <link rel="stylesheet" href="/css/style.css?v=1.4">
+  </head>
+  <body>
+    <div class="last-day">
+      <h1>Информация с прошлого раза</h1>
+      <label>Последний раз голосование проводилось&nbsp;&nbsp;</label><label id="last-timestamp">-</label>
+      <table id="last-day-table"></table>
+      <details id="get-results">
+        <summary>Получить результаты</summary>
+        <p id="results-class"></p>
+      </details>
+    </div>
+    <div class="current-day">
+      <h1>Новая запись</h1>
+      <label for="new-record-1">Выберете первое блюдо:</label>
+      <select name="new-record-1" id="record1" val="">
+        <option value="nothing-1">Ничего</option>
+        <option value="b1-1">Молочная каша</option>
+        <option value="b2-1">Гречневая каша с котлетой</option>
+        <option value="b3-1">Макароны с фрикаделькой</option>
+        <option value="b4-1">Макароны с сосиской</option>
+        <option value="b5-1">Плов из птицы</option>
+        <option value="b6-1">Гороховая каша с фрикаделькой</option>
+        <option value="b7-1">Гороховая каша с сосиской</option>
+        <option value="other-1">Другое...</option>
+      </select>
+      <label for="new-record-2">Выберете второе блюдо:</label>
+      <select name="new-record-2" id="record2" val="">
+        <option value="nothing-2">Ничего</option>
+        <option value="b1-2">Бутерброд с колбасой</option>
+        <option value="b2-2">Бутерброд с сыром</option>
+        <option value="b3-2">Банан</option>
+        <option value="b4-2">Масло и сыр</option>
+        <option value="b5-2">Яйцо</option>
+        <option value="b6-2">Яблоко</option>
+        <option value="other-2">Другое...</option>
+      </select>
+      <label for="new-record-3">Выберете напиток:</label>
+      <select name="new-record-3" id="record3" val="">
+        <option value="nothing-3">Ничего</option>
+        <option value="b1-3">Какао на молоке</option>
+        <option value="b2-3">Чай</option>
+        <option value="b3-3">Кефир</option>
+        <option value="b4-3">Сок</option>
+        <option value="other-3">Другое...</option>
+      </select>
+      <button type="button" id="button-done">Отправить на устройства</button>
+    </div>
+    <p class="warning">Это сайт для учителя, если вы не учитель, перейдите <a href="/mobile/">сюда</a></p>
+    <script src="/js/script.js?v=1.7"></script>
+    <script src="http://127.0.0.1:3000/livereload/livereload.js?snipver=1"></script>
+  </body>
+</html>
